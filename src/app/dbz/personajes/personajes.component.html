@@ -1,0 +1,10 @@
+<ul>
+    <!-- <li>Goku-7000</li>
+    <li>Krilin-7000</li>
+    <li>Vegueta-7000</li> -->
+    <li *ngFor="let personaje of personaje">
+        {{personaje.nombre}} -
+        {{personaje.poder | number}} 
+    </li>
+</ul>
+

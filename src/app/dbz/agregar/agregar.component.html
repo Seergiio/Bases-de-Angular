@@ -1,0 +1,26 @@
+<h3>Agregar</h3>
+<hr/>
+<form (ngSubmit)="Agregar()">
+
+
+<!-- placeholder="Nombre"  Texto mostrado por default, como el hint en Android-->
+
+<input type="text"
+placeholder="Nombre"  
+name ="Nombre" [(ngModel)]="nuevo.nombre" 
+> 
+
+<input type="number"
+placeholder="Poder"
+name= "poder"[(ngModel)]="nuevo.poder" 
+>
+
+<!-- <input type="text"
+placeholder="Poder"
+[value]="nuevo.poder"
+(input)="CambiarNombre($event)"> -->
+
+<button type="submit"> 
+    Agregar
+</button>   
+</form>
